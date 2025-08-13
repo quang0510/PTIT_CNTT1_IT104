@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",                // Giữ nguyên mục tiêu ES6
+    "module": "commonjs",            // Sử dụng mô-đun CommonJS
+    "strict": true,                  // Bật chế độ kiểm tra nghiêm ngặt
+    "outDir": "./dist",              // Thư mục đầu ra cho file biên dịch
+    "esModuleInterop": true,         // Hỗ trợ interop giữa các mô-đun ES và CommonJS
+    "moduleResolution": "node",      // Cách TypeScript giải quyết các mô-đun
+    "skipLibCheck": true,            // Bỏ qua kiểm tra thư viện
+    "forceConsistentCasingInFileNames": true // Đảm bảo các tên file có chữ hoa chữ thường nhất quán
+  },
+  "include": ["./src"],              // Chỉ biên dịch các file trong thư mục src
+}
