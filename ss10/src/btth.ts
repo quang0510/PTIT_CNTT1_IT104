@@ -219,26 +219,26 @@ do {
       manager.addFlight(flight);
       break;
     case 3:
-      const pid = Number(prompt("ID hành khách: "));
+      const id3 = Number(prompt("ID hành khách: "));
       const fnum = prompt("Số hiệu chuyến bay: ");
       const tickets = Number(prompt("Số vé: "));
-      const booking = manager.createBooking(pid, fnum, tickets);
+      const booking = manager.createBooking(id3, fnum, tickets);
       if (booking) console.log("Đặt vé thành công:", booking.getBookingDetails());
       else console.log("Đặt vé thất bại!");
       break;
     case 4:
-      const bid = Number(prompt("ID booking cần hủy: "));
-      manager.cancelBooking(bid);
+      const id4 = Number(prompt("ID booking cần hủy: "));
+      manager.cancelBooking(id4);
       console.log("Đã hủy booking!");
       break;
     case 5:
-      const o = prompt("Điểm đi: ");
-      const d = prompt("Điểm đến: ");
-      manager.listAvailableFlights(o, d);
+      const start = prompt("Điểm đi: ");
+      const end = prompt("Điểm đến: ");
+      manager.listAvailableFlights(start, end);
       break;
     case 6:
-      const pid2 = Number(prompt("ID hành khách: "));
-      manager.listBookingsByPassenger(pid2);
+      const id6 = Number(prompt("ID hành khách: "));
+      manager.listBookingsByPassenger(id6);
       break;
     case 7:
       console.log("Doanh thu:", manager.calculateTotalRevenue());
@@ -247,18 +247,19 @@ do {
       manager.countFlightsByType();
       break;
     case 9:
-      const fn = prompt("Số hiệu chuyến bay: ");
-      const nt = prompt("Giờ mới: ");
-      manager.updateFlightTime(fn, nt);
-      console.log("Đã cập nhật giờ bay!");
+      const num9 = prompt("Số hiệu chuyến bay: ");
+      const time9 = prompt("Giờ mới: ");
+      manager.updateFlightTime(num9, time9);
+      console.log("Đã cập nhật giờ bay ");
       break;
     case 10:
-      const fn2 = prompt("Số hiệu chuyến bay: ");
-      manager.getFlightPassengerList(fn2);
+      const num10 = prompt("Số hiệu chuyến bay: ");
+      manager.getFlightPassengerList(num10);
       break;
     case 11:
-      console.log("Thoát chương trình...");
+      console.log("Thoát chương trình ");
       break;
   }
 } while (choice !== 11);
+
 
