@@ -177,4 +177,88 @@ class AirlineManager {
     const list = this.bookings.filter(b => b.flight.flightNumber === flightNumber).map(b => b.passenger.name);
     console.log(`Passengers on ${flightNumber}:`, list);
   }
+
 }
+const manager = new AirlineManager();
+let choice;
+
+do {
+  console.log(`
+===== MENU =====
+1. Thêm hành khách mới
+2. Thêm chuyến bay mới
+3. Tạo giao dịch đặt vé
+4. Hủy giao dịch đặt vé
+5. Hiển thị chuyến bay còn trống
+6. Hiển thị vé đã đặt của một hành khách
+7. Tính tổng doanh thu
+8. Đếm số lượng chuyến bay nội địa/quốc tế
+9. Cập nhật giờ bay
+10. Xem danh sách hành khách của một chuyến bay
+11. Thoát
+`);
+
+  choice = Number(prompt("Chọn chức năng: "));
+
+  switch (choice) {
+    case 1:
+      const name = prompt("Tên hành khách: ");
+      const passport = prompt("Số hộ chiếu: ");
+      manager.addPassenger(name, passport);
+      break;
+    case 2:
+      const type = prompt("Loại (domestic/international): ");
+      const flightNumber = prompt("Số hiệu chuyến bay: ");
+      const origin = prompt("Điểm đi: ");
+      const dest = prompt("Điểm đến: ");
+      const time = prompt("Giờ khởi hành: ");
+      const cap = Number(prompt("Sức chứa: "));
+      const flight = type === "domestic"
+        ? new DomesticFlight(flightNumber, origin, dest, time, cap)
+        : new InternationalFlight(flightNumber, origin, dest, time, cap);
+      manager.addFlight(flight);
+      break;
+    case 3:
+      const pid = Number(prompt("ID hành khách: "));
+      const fnum = prompt("Số hiệu chuyến bay: ");
+      const tickets = Number(prompt("Số vé: "));
+      const booking = manager.createBooking(pid, fnum, tickets);
+      if (booking) console.log("Đặt vé thành công:", booking.getBookingDetails());
+      else console.log("Đặt vé thất bại!");
+      break;
+    case 4:
+      const bid = Number(prompt("ID booking cần hủy: "));
+      manager.cancelBooking(bid);
+      console.log("Đã hủy booking!");
+      break;
+    case 5:
+      const o = prompt("Điểm đi: ");
+      const d = prompt("Điểm đến: ");
+      manager.listAvailableFlights(o, d);
+      break;
+    case 6:
+      const pid2 = Number(prompt("ID hành khách: "));
+      manager.listBookingsByPassenger(pid2);
+      break;
+    case 7:
+      console.log("Doanh thu:", manager.calculateTotalRevenue());
+      break;
+    case 8:
+      manager.countFlightsByType();
+      break;
+    case 9:
+      const fn = prompt("Số hiệu chuyến bay: ");
+      const nt = prompt("Giờ mới: ");
+      manager.updateFlightTime(fn, nt);
+      console.log("Đã cập nhật giờ bay!");
+      break;
+    case 10:
+      const fn2 = prompt("Số hiệu chuyến bay: ");
+      manager.getFlightPassengerList(fn2);
+      break;
+    case 11:
+      console.log("Thoát chương trình...");
+      break;
+  }
+} while (choice !== 11);
+
