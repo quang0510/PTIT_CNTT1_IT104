@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bai2 {
+  border: 1px solid #dadada;
+  width: fit-content;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+}
+.bai2 button {
+  padding: 8px;
+  width: fit-content;
+  border: 1px solid greenyellow;
+  border-radius: 8px;
+  background-color: rgb(195, 253, 195);
+}
+.bai2 div {
+  margin-top: 20px;
+  border-left: 3px solid green;
+  padding: 10px;
+  background-color: rgb(219, 255, 219);
+}
