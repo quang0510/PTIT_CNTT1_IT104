@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 5,
+      "name": "Vũ Thị Bích Ngọc",
+      "dateOfBirth": "1999-02-07",
+      "email": "bichvungoc@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Nguyễn Thành Công",
+      "dateOfBirth": "18/07/2001",
+      "email": "congnt@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 7,
+      "name": "Hoàng Thanh Mai",
+      "dateOfBirth": "05/03/2000",
+      "email": "maihth@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "name": "Đặng Thị Lan Anh",
+      "dateOfBirth": "09/11/1998",
+      "email": "lananhdt@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 9,
+      "name": "Bùi Quang Hieu",
+      "dateOfBirth": "12/08/2000",
+      "email": "hieubq@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "name": "Phạm Minh Đức",
+      "dateOfBirth": "23/06/1999",
+      "email": "ducpm@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 11,
+      "name": "Lê Thị Thu Hương",
+      "dateOfBirth": "01/04/1997",
+      "email": "huongltth@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 12,
+      "name": "Nguyễn Đức Toàn",
+      "dateOfBirth": "14/10/2000",
+      "email": "toandtnguyen@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 13,
+      "name": "Trần Thị Mai Linh",
+      "dateOfBirth": "21/01/1998",
+      "email": "linhtrt@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 14,
+      "name": "Lê Minh Thành",
+      "dateOfBirth": "30/06/1997",
+      "email": "thanhlm@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 15,
+      "name": "Nguyễn Văn Hoàng",
+      "dateOfBirth": "16/12/2000",
+      "email": "hoangnv@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 16,
+      "name": "Phạm Thái Bình",
+      "dateOfBirth": "17/03/1998",
+      "email": "binhpt@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 17,
+      "name": "Vũ Thị Hải Yến",
+      "dateOfBirth": "06/05/1999",
+      "email": "yenvth@gmail.com",
+      "status": "inactive"
+    },
+    {
+      "id": 18,
+      "name": "Lê Quốc Bảo",
+      "dateOfBirth": "26/11/1998",
+      "email": "baolq@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 19,
+      "name": "Nguyễn Thị Lan Anh",
+      "dateOfBirth": "03/09/2001",
+      "email": "lananhnt@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 20,
+      "name": "Ngọ Văn Quý",
+      "dateOfBirth": "2025-09-07",
+      "email": "nvq@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 21,
+      "name": "Nguyễn Phú Toàn",
+      "dateOfBirth": "2025-09-07",
+      "email": "nptoi@gmail.com",
+      "status": "inactive"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "2",
+      "name": "chơi"
+    },
+    {
+      "id": "3",
+      "name": "học"
+    }
+  ]
+}
