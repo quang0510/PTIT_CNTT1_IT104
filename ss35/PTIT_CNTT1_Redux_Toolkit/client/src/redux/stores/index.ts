@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import taskSlice from "../slices/task.slice";
 import counterSlice from "../slices/counter.slice";
-import randomSlice from "../../components/RandomNumber";
-import themeSlice from "../../components/ChangeTheme";
-import changeModeSlice from "../../components/ChangeMode";
-import menuModeSlice from "../../components/ChangeModeMenu";
-import languageSlice from "../../components/Language";
+import randomSlice from "../slices/number.slice";
+import themeSlice from "../slices/theme.slice";
+import changeModeSlice from "../slices/mode.slice";
+import menuModeSlice from "../slices/menu.slice";
+import languageSlice from "../slices/language.slices";
 
 
 const store = configureStore({
